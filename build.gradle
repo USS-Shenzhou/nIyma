@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'cn.usshenzhou'
-version = '1.0-SNAPSHOT'
+version = '0.1.0'
 
 repositories {
     mavenCentral()
@@ -12,6 +12,11 @@ repositories {
 dependencies {
     testImplementation platform('org.junit:junit-bom:5.10.0')
     testImplementation 'org.junit.jupiter:junit-jupiter'
+
+    implementation 'com.github.l42111996:kcp-base:1.6'
+    implementation 'commons-io:commons-io:2.16.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+
 }
 
 test {
